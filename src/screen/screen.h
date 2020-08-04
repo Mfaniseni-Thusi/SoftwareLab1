@@ -16,7 +16,7 @@ enum class Direction{UP, DOWN, FORWARD, BACK, HOME, END};
 class Screen {
     public:
         // Screen's constructor
-        Screen(string::size_type height, string::size_type width, char bkground = '#');
+        Screen(string::size_type height, string::size_type width, char bkground = ' ');
 
         // get the Screen's height
         string::size_type height() const { return height_; }   // CONSTANT MEMBER FUNCTION INLINE - this function cannot change anything inside itself
@@ -52,10 +52,10 @@ class Screen {
         void set( const string& s );  // CONSTANT MEMBER (string) this string cannot be changed inside this function
 
         // overwrite the entire screen with the specified character
-        void clear( char bkground = '#');
+        void clear( char bkground = ' ');
 
         // resize the screen
-        void reSize( string::size_type height, string::size_type width, char bkground = '#');
+        void reSize( string::size_type height, string::size_type width, char bkground = ' ');
         // display the screen
         void display() const;              // CONSTANT MEMBER FUNCTION OUTLINE - this function cannot change anything inside itself
                                            // it's a read-only file
