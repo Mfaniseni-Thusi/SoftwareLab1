@@ -14,8 +14,8 @@ int main()
 	auto answer = num1 * num2; // type deduced for 'answer' is: complex<float>
 
 	cout << "The answer is: " << answer << endl;
-	cout << "Or in a more familiar form: " << answer.real() 
-			<< " + " << answer.imag() << "j" 
+	cout << "Or in a more familiar form: " << answer.real()
+			<< " + " << answer.imag() << "j"
 			<< endl	<< endl;
 
 	// answer++;
@@ -23,3 +23,5 @@ int main()
 	return 0;
 }
 
+//the commented line will not work because it is gcc compiler
+// ignores every text that comes after "//" in c++
