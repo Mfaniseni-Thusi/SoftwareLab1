@@ -239,3 +239,8 @@ void Screen::getSquare(string::size_type rCoordinate, string::size_type cCoordin
         <<  rCoordinate << "," << cCoordinate << " exceed your screen boundaries!" << endl;
     }
 }
+/* Exercise 4.5
+   This feature forms part of the screen. In the actual screens,
+   this is taken care of by the scrolling bars to accommodate the part of what a user does in the screen
+   which would otherwise not fit inside the screen boundaries.
+*/
