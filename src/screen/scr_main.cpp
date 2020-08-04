@@ -66,4 +66,10 @@ myScreen.clear();
 return 0;
 }
 
+/*  Exercise 4.6
+ Changing the interface does no affect the users directly,
+ but the programmers can freely change the implementation because that only affects the user experience
+but there normally no visual changes to the user.
+*/
+
 
